@@ -8,28 +8,28 @@ describe('guy', function () {
     expect(result).toEqual('Whatever.');
   });
 
-  xit('shouting', function () {
+  it('shouting', function () {
     var result = guy.hey('WATCH OUT!');
     expect(result).toEqual('Whoa, chill out!');
   });
 
-  xit('shouting gibberish', function () {
+  it('shouting gibberish', function () {
     var result = guy.hey('FCECDFCAAB');
     expect(result).toEqual('Whoa, chill out!');
   });
 
-  xit('asking a question', function () {
+  it('asking a question', function () {
     var result = guy.hey('Does this cryogenic chamber make me look fat?');
     expect(result).toEqual('Sure.');
   });
 
-  xit('asking a numeric question', function () {
+  it('asking a numeric question', function () {
     var result = guy.hey('You are, what, like 15?');
     expect(result).toEqual('Sure.');
   });
 
-  xit('asking gibberish', function () {
-    var result = guy.hey('fffbbcbeab?');
+  it('asking gibberish', function () {
+    var result = guy.hey('fffbbcbeab? ');
     expect(result).toEqual('Sure.');
   });
 
@@ -43,7 +43,7 @@ describe('guy', function () {
     expect(result).toEqual('Whatever.');
   });
 
-  xit('forceful questions', function () {
+  it('forceful questions', function () {
     var result = guy.hey('WHAT THE HELL WERE YOU THINKING?');
     expect(result).toEqual("Calm down, I know what I'm doing!");
   });
@@ -68,7 +68,7 @@ describe('guy', function () {
     expect(result).toEqual('Whoa, chill out!');
   });
 
-  xit('shouting with no exclamation mark', function () {
+  it('shouting with no exclamation mark', function () {
     var result = guy.hey('I HATE YOU');
     expect(result).toEqual('Whoa, chill out!');
   });
@@ -78,12 +78,12 @@ describe('guy', function () {
     expect(result).toEqual('Whatever.');
   });
 
-  xit('prattling on', function () {
+  it('prattling on', function () {
     var result = guy.hey('Wait! Hang on.  Are you going to be OK?');
     expect(result).toEqual('Sure.');
   });
 
-  xit('silence', function () {
+  it('silence', function () {
     var result = guy.hey('');
     expect(result).toEqual('Fine. Be that way!');
   });
