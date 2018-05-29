@@ -13,7 +13,7 @@ function lazyGuy(){
         if(message == input.toUpperCase() && message.charAt(message.length-1)=="?"){
             result = "Calm down, I know what I'm doing!";
         }
-        if(input==""){
+        if(message==""){
            return "Fine. Be that way!";
         }
         return result;
