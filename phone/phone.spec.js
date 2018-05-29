@@ -6,22 +6,22 @@ describe('PhoneNumber()', function () {
     expect(phone.number()).toEqual('2234567890');
   });
 
-  xit('cleans numbers with dots', function () {
+  it('cleans numbers with dots', function () {
     var phone = new PhoneNumber('223.456.7890');
     expect(phone.number()).toEqual('2234567890');
   });
 
-  xit('cleans numbers with multiple spaces', function () {
+  it('cleans numbers with multiple spaces', function () {
     var phone = new PhoneNumber('223 456   7890   ');
     expect(phone.number()).toEqual('2234567890');
   });
 
-  xit('invalid when 9 digits', function () {
+  it('invalid when 9 digits', function () {
     var phone = new PhoneNumber('123456789');
     expect(phone.number()).toEqual(null);
   });
 
-  xit('invalid when 11 digits does not start with a 1', function () {
+  it('invalid when 11 digits does not start with a 1', function () {
     var phone = new PhoneNumber('22234567890');
     expect(phone.number()).toEqual(null);
   });
