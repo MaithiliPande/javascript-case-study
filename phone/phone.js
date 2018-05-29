@@ -1,8 +1,7 @@
 function PhoneNumber(givenNumber){
     this.number = function(){
-      
-        var result =givenNumber.replace(/[^A-Z0-9]+/ig, "");
-        if(givenNumber.length==9){
+        var result =givenNumber.replace(/[^0-9]+/ig, "");
+        if(givenNumber.length<10 || givenNumber.length>10 ){
             return null;
         }
         return result;
